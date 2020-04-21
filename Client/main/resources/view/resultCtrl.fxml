@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="Controllers.FilterController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="229.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="filterTable" layoutX="27.0" layoutY="14.0" prefHeight="200.0" prefWidth="409.0">
+        <columns>
+          <TableColumn fx:id="artistCol" prefWidth="75.0" text="Artist" />
+          <TableColumn fx:id="locCol" prefWidth="192.6666259765625" text="Locatie" />
+            <TableColumn fx:id="dateCol" prefWidth="83.3333740234375" text="Data" />
+            <TableColumn fx:id="freeSeatsCol" prefWidth="75.0" text="Free" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

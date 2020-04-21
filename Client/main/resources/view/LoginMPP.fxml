@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="Controllers.LoginController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="127.0" layoutY="37.0" prefHeight="42.0" prefWidth="429.0" text="SpringWell Music Festival">
+         <font>
+            <Font name="Candara Bold Italic" size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#05c19c" />
+                  <Stop color="#ddeae7" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="127.0" layoutY="88.0" prefHeight="37.0" prefWidth="335.0" text="Please log in to see the concerts and buy tickets" textFill="#28c674">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user" layoutX="127.0" layoutY="143.0" prefHeight="50.0" prefWidth="269.0" promptText="username" />
+      <PasswordField fx:id="passwd" layoutX="127.0" layoutY="217.0" prefHeight="50.0" prefWidth="269.0" promptText="password" />
+      <Button fx:id="login" layoutX="127.0" layoutY="314.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="269.0" text="Login" textFill="#0ee39b" onAction="#onLogin">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

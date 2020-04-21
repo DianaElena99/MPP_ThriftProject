@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="1212.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AppController">
+   <children>
+      <Label layoutX="41.0" layoutY="17.0" prefHeight="36.0" prefWidth="723.0" text="Concerts ; Hurry up and get your ticket!! ^^">
+         <font>
+            <Font name="System Italic" size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#05eb3f" />
+                  <Stop color="#0d0101" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView fx:id="tabel" layoutX="35.0" layoutY="65.0" prefHeight="258.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="artistCol" prefWidth="109.33334732055664" text="Artist" />
+            <TableColumn fx:id="locatieCol" prefWidth="159.99998474121094" text="Locatie" />
+            <TableColumn fx:id="dataCol" prefWidth="127.33331298828125" text="Data" />
+            <TableColumn fx:id="FreeCol" prefWidth="110.66665649414062" text="LocuriFree" />
+            <TableColumn fx:id="OcupCol" prefWidth="128.0" text="Locuri Ocupate" />
+            <TableColumn fx:id="idCol" prefWidth="100.0" text="id" />
+        </columns>
+      </TableView>
+      <TableView fx:id="rezFin" layoutX="35.0" layoutY="323.0" prefHeight="233.0" prefWidth="735.0">
+         <columns>
+            <TableColumn fx:id="artistRez" prefWidth="150.0" text="Artist" />
+            <TableColumn fx:id="locatieRez" prefWidth="180.0" text="Locatie" />
+            <TableColumn fx:id="dataRez" prefWidth="190.0" text="Data" />
+            <TableColumn fx:id="freeRez" prefWidth="208.0" text="LocuriFree" />
+         </columns>
+      </TableView>
+      <Label layoutX="792.0" layoutY="74.0" prefHeight="27.0" prefWidth="246.0" text="Find a concert" textFill="#0f8631">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dataPicker" layoutX="792.0" layoutY="126.0" prefHeight="46.0" prefWidth="262.0" promptText="Date of concert" />
+      <!--<Button fx:id="searchBtn" layoutX="792.0" layoutY="187.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="262.0" text="Search!" >
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>-->
+      <Label layoutX="792.0" layoutY="333.0" prefHeight="58.0" prefWidth="262.0" text="Sell Tickets" textFill="#0f8631">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numeTxt" layoutX="792.0" layoutY="379.0" prefHeight="46.0" prefWidth="262.0" promptText="nume client" />
+      <TextField fx:id="nrBileteTxt" layoutX="792.0" layoutY="433.0" prefHeight="46.0" prefWidth="262.0" promptText="# bilete" />
+      <Button fx:id="sellBtn" layoutX="792.0" layoutY="492.0" mnemonicParsing="false" onAction="#onSell" prefHeight="36.0" prefWidth="262.0" text="Sell">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="LogOutBtn" layoutX="664.0" layoutY="15.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="40.0" prefWidth="105.0" text="Logout" textFill="#74ab94">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="search" layoutX="792.0" layoutY="188.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="58.0" prefWidth="262.0" text="Search">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
